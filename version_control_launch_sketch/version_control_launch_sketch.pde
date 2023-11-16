@@ -8,9 +8,9 @@ void setup(){
 void draw(){
   background(0);
   // arraylist looped backwards
-  for (int i = particles.size()-1; i > 0; i--){
-    particles.get(i).update();
-    particles.get(i).display();
+  for (int j = particles.size()-1; j > 0; j--){
+    particles.get(j).update();
+    particles.get(j).display();
   }
   if(mousePressed == true) {
     particles.add(new Particle(mouseX, mouseY));
